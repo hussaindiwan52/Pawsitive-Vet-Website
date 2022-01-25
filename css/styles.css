@@ -1,23 +1,14 @@
 body {
 	font-family: "Montserrat", sans-serif;
+	text-align: center;
 }
-h1 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 900;
-	font-size: 3.5rem;
-	line-height: 1.5;
-}
-h2 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 3rem;
-	line-height: 1.5;
-}
+
+h1,
+h2,
 h3 {
 	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 1.5rem;
 }
+
 p {
 	color: #8f8f8f;
 }
@@ -38,11 +29,20 @@ p {
 	font-weight: 600;
 	font-size: 1.2rem;
 }
+
 /* download buttons */
 .download-btn {
 	margin: 5% 3% 5% 0;
 }
+
 /* title */
+.big-heading {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 1.5;
+	text-align: left;
+}
 .iphone {
 	width: 60%;
 	transform: rotate(25deg);
@@ -56,22 +56,16 @@ p {
 	color: #fff;
 	overflow: hidden;
 }
-@media (max-width: 1028px) {
-	.iphone {
-		transform: rotate(0deg);
-		margin-bottom: 0%;
-	}
-	.title-container {
-		text-align: center;
-	}
-}
 
 /* features */
 #features {
 	padding: 7% 15%;
 }
+.features-heading {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
 .feature-box {
-	text-align: center;
 	padding: 4%;
 }
 .icon {
@@ -84,7 +78,6 @@ p {
 
 /* testimonial */
 #testimonials {
-	text-align: center;
 	background-color: #4374ce;
 	color: #fff;
 }
@@ -93,12 +86,17 @@ p {
 	border-radius: 100%;
 	margin: 20px;
 }
+.testimonials-text {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.5;
+}
 .carousel-inner {
 	padding: 7% 15%;
 }
+
 /* press */
 #press {
-	text-align: center;
 	background-color: #4374ce;
 	padding-bottom: 3%;
 }
@@ -106,10 +104,15 @@ p {
 	width: 15%;
 	margin: 20px 20px 50px;
 }
+
 /* pricing */
-#pricing {
-	text-align: center;
+
+.pricing-heading {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.5;
 }
+
 /* pricing cards */
 .card {
 	height: 100%;
@@ -129,7 +132,6 @@ p {
 /* cta */
 #cta {
 	background-color: #4c8bff;
-	text-align: center;
 	padding: 100px;
 }
 .cta-heading {
@@ -139,11 +141,21 @@ p {
 	color: #fff;
 	line-height: 5rem;
 }
+
 /* footer */
 #footer {
-	text-align: center;
 	padding: 25px;
 }
 .footer-icon {
 	padding: 30px 8px;
+}
+
+@media (max-width: 1028px) {
+	.iphone {
+		transform: rotate(0deg);
+		margin-bottom: 0%;
+	}
+	#title {
+		text-align: center;
+	}
 }
